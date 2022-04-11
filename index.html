@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      KachaBazar - React Grocery & Organic Food Store e-commerce Template
+    </title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="header-area">
+      <div class="header-top">
+        <div class="header-top-container">
+          <div class="header-top-content">
+            <span class="header-top-contact">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              We are available 24/7, Need help? Call Us:
+              <a href="tel:+012345609">+01234560352</a>
+            </span>
+
+            <div class="header-top-menu">
+              <a href="#">About Us</a>
+              <span>|</span>
+              <a href="#">Contact Us</a>
+              <span>|</span>
+              <button>My account</button>
+              <span>|</span>
+              <button class="login-button">
+                <span>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle></svg></span
+                >Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="banner">
+          <div class="banner-container">
+            <div class="banner-content">
+              <div class="logo">
+                <a href="#">
+                  <img alt="logo" src="img/logo-light.svg" />
+                </a>
+              </div>
+
+              <div class="search-area">
+                <div class="search-container">
+                  <div class="search-content">
+                    <form action="" class="search-form">
+                      <label for="">
+                        <input
+                          type="text"
+                          placeholder="Search for products (e.g. fish, apple, oil)"
+                          value=""
+                        />
+                      </label>
+                      <button type="submit">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill="none"
+                            stroke-miterlimit="10"
+                            stroke-width="32"
+                            d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                          ></path>
+                          <path
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-miterlimit="10"
+                            stroke-width="32"
+                            d="M338.29 338.29L448 448"
+                          ></path>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="notification-area">
+                <div class="notification-container">
+                  <div class="notification-content">
+                    <!--<div class="notification-info">-->
+                    <button class="notification-info">
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                        ></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                      </svg>
+                    </button>
+
+                    <button class="notification-cart">
+                      <span>0</span>
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path
+                          d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button class="notification-login">
+                      <span>
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-area">
+          <div class="menu-container">
+            <div class="left-menu-area">
+              <div class="left-menu-container">
+                <div class="left-menu-content">
+                  <div class="left-menu">
+                    <nav class="left-menu-nav">
+                      <div class="droppdown-item">
+                        <button>
+                          <span>Categories</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                      <a href="#">About Us</a>
+                      <a href="#">Contact Us</a>
+                      <div class="droppdown-item middle-menu-item">
+                        <button
+                          id="headlessui-popover-button-3"
+                          type="button"
+                          aria-expanded="false"
+                        >
+                          <span>Pages</span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                      <a class="offers" href="#"
+                        >Offers
+                        <div class="offers-top">
+                          <span class="animat"></span
+                          ><span class="backgr"></span>
+                        </div>
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-menu">
+              <a href="#">Privacy Policy</a
+              ><a href="#">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-content-area">
+      <div class="main-content">
+        <button class="fixed-cart">
+          <div class="fixed-cart-wrap">
+            <div class="fixed-cart-up">
+              <span class="cart-up-icon"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zm80 0v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"
+                  ></path>
+                  <path
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16"
+                  ></path></svg></span
+              ><span class="cart-up-info">0 Items</span>
+            </div>
+            <div class="cart-down-info">$0.00</div>
+          </div>
+        </button>
+        <div class="slider-area">
+          <div class="slider-container">
+            <div class="slider-top-content">
+              <div class="slider-content">
+                <div class="slide-wrap">
+                  <div class="slide-indicator">
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class="active"></span>
+                  </div>
+                  <div class="slide-info">
+                    <div class="single-slide">
+                      <div class="slide">
+                        <span class="slide-inner"
+                          ><span class="slide-inner-info"></span
+                          ><img
+                            alt="Quality Freshness Guaranteed!"
+                            sizes="100vw"
+                            src="img/slider/slider-3.webp"
+                            class="slide-image"
+                        /></span>
+                      </div>
+                      <div class="slide-text">
+                        <div class="slide-text-content">
+                          <h1>Quality Freshness Guaranteed!</h1>
+                          <p>
+                            Intrinsicly fashion performance based products
+                            rather than accurate benefits...
+                          </p>
+                          <a href="#">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-area">
+                <div class="discount-container">
+                  <div class="discount-content">
+                    <div class="discount-content-top">
+                      <h3 class="">Latest Super Discount Active Coupon Code</h3>
+                    </div>
+                    <div class="discount-content-bottom">
+                      <div class="coupon">
+                        <div class="coupon-left">
+                          <figure>
+                            <span
+                              style="
+                                box-sizing: border-box;
+                                display: inline-block;
+                                overflow: hidden;
+                                width: initial;
+                                height: initial;
+                                background: rgba(0, 0, 0, 0) none repeat scroll
+                                  0% 0%;
+                                opacity: 1;
+                                border: 0px none;
+                                margin: 0px;
+                                padding: 0px;
+                                position: relative;
+                                max-width: 100%;
+                              "
+                              ><span
+                                style="
+                                  box-sizing: border-box;
+                                  display: block;
+                                  width: initial;
+                                  height: initial;
+                                  background: rgba(0, 0, 0, 0) none repeat
+                                    scroll 0% 0%;
+                                  opacity: 1;
+                                  border: 0px none;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  max-width: 100%;
+                                "
+                                ><img
+                                  style="
+                                    display: block;
+                                    max-width: 100%;
+                                    width: initial;
+                                    height: initial;
+                                    background: rgba(0, 0, 0, 0) none repeat
+                                      scroll 0% 0%;
+                                    opacity: 1;
+                                    border: 0px none;
+                                    margin: 0px;
+                                    padding: 0px;
+                                  "
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e" /></span
+                              ><img
+                                alt="Summer Gift Voucher"
+                                src="img/ins3.webp"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style="
+                                  position: absolute;
+                                  inset: 0px;
+                                  box-sizing: border-box;
+                                  padding: 0px;
+                                  border: medium none;
+                                  margin: auto;
+                                  display: block;
+                                  width: 0px;
+                                  height: 0px;
+                                  min-width: 100%;
+                                  max-width: 100%;
+                                  min-height: 100%;
+                                  max-height: 100%;
+                                  border-radius: 0.5rem;
+                                "
+                            /></span>
+                          </figure>
+                          <div class="coupon-info">
+                            <div class="coupon-info-top">
+                              <h6>
+                                <span>10%</span>
+                                Off
+                              </h6>
+                              <div class="offer-active">
+                                <span>Active</span>
+                              </div>
+                            </div>
+                            <h2 class="coupon-info-middle">
+                              Summer Gift Voucher
+                            </h2>
+                            <span class="coupon-info-bottom"
+                              ><div class="offer-count-down">
+                                <span>52</span
+                                >:<span>10</span>:<span>48</span>:<span
+                                  >37</span
+                                >
+                              </div></span
+                            >
+                          </div>
+                        </div>
+                        <div class="coupon-right">
+                          <div class="coupon-right-container">
+                            <div class="coupon-right-content">
+                              <div class="coupon-right-top">
+                                <div class="">
+                                  <button class="">
+                                    <span class="">SUMMER22 </span>
+                                  </button>
+                                </div>
+                              </div>
+                              <p class="coupon-right-bottom">
+                                * This coupon apply when shopping more then
+                                <span class=""> $500</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="coupon">
+                        <div class="coupon-left">
+                          <figure>
+                            <span
+                              style="
+                                box-sizing: border-box;
+                                display: inline-block;
+                                overflow: hidden;
+                                width: initial;
+                                height: initial;
+                                background: rgba(0, 0, 0, 0) none repeat scroll
+                                  0% 0%;
+                                opacity: 1;
+                                border: 0px none;
+                                margin: 0px;
+                                padding: 0px;
+                                position: relative;
+                                max-width: 100%;
+                              "
+                              ><span
+                                style="
+                                  box-sizing: border-box;
+                                  display: block;
+                                  width: initial;
+                                  height: initial;
+                                  background: rgba(0, 0, 0, 0) none repeat
+                                    scroll 0% 0%;
+                                  opacity: 1;
+                                  border: 0px none;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  max-width: 100%;
+                                "
+                                ><img
+                                  style="
+                                    display: block;
+                                    max-width: 100%;
+                                    width: initial;
+                                    height: initial;
+                                    background: rgba(0, 0, 0, 0) none repeat
+                                      scroll 0% 0%;
+                                    opacity: 1;
+                                    border: 0px none;
+                                    margin: 0px;
+                                    padding: 0px;
+                                  "
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e" /></span
+                              ><img
+                                alt="Winter Gift Voucher"
+                                src="img/ins4.webp"
+                                style="
+                                  position: absolute;
+                                  inset: 0px;
+                                  box-sizing: border-box;
+                                  padding: 0px;
+                                  border: medium none;
+                                  margin: auto;
+                                  display: block;
+                                  width: 0px;
+                                  height: 0px;
+                                  min-width: 100%;
+                                  max-width: 100%;
+                                  min-height: 100%;
+                                  max-height: 100%;
+                                  border-radius: 0.5rem;
+                                "
+                            /></span>
+                          </figure>
+                          <div class="coupon-info">
+                            <div class="coupon-info-top">
+                              <h6>
+                                <span class="">15%</span>
+                                Off
+                              </h6>
+                              <div class="offer-active">
+                                <span class="">Active</span>
+                              </div>
+                            </div>
+                            <h2 class="coupon-info-middle">
+                              Winter Gift Voucher
+                            </h2>
+                            <span class="coupon-info-bottom"
+                              ><div class="offer-count-down">
+                                <span class="">206</span>:<span class=""
+                                  >11</span
+                                >:<span class="">13</span>:<span class=""
+                                  >37</span
+                                >
+                              </div></span
+                            >
+                          </div>
+                        </div>
+                        <div class="coupon-right">
+                          <div class="coupon-right-container">
+                            <div class="coupon-right-content">
+                              <div class="coupon-right-top">
+                                <div style="">
+                                  <button class="">
+                                    <span class="">WINTER21 </span>
+                                  </button>
+                                </div>
+                              </div>
+                              <p class="coupon-right-bottom">
+                                * This coupon apply when shopping more then
+                                <span class=""> $500</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-bottom">
+              <div class="slider-bottom-container">
+                <div class="slider-bottom-content">
+                  <h1>
+                    <span>100% Natural Quality</span>
+                    <!-- -->Organic Product
+                  </h1>
+                  <p>
+                    See Our latest discounted products from here and get a
+                    special<a href="#discount">discount product</a>
+                  </p>
+                </div>
+                <a class="shop-now" href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-area">
+          <div class="featured-container">
+            <div class="featured-heading">
+              <div class="featured-heading-content">
+                <h2>Featured Categories</h2>
+                <p>
+                  Choose your necessary products from this feature categories.
+                </p>
+              </div>
+            </div>
+            <ul class="featured-content">
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="group">
+                <div class="featured-item">
+                  <div class="single-featured-item">
+                    <div class="featured-left-image">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+                          opacity: 1;
+                          border: 0px none;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                              0%;
+                            opacity: 1;
+                            border: 0px none;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: rgba(0, 0, 0, 0) none repeat scroll 0%
+                                0%;
+                              opacity: 1;
+                              border: 0px none;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2735%27%20height=%2735%27/%3e" /></span
+                        ><img
+                          alt="Fish &amp; Meat"
+                          src="img/categori/ins4.webp"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium none;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                    <div class="featured-right-content">
+                      <h3>Fish &amp; Meat</h3>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Fish</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span
+                              ><svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 512 512"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke-linecap="square"
+                                  stroke-miterlimit="10"
+                                  stroke-width="48"
+                                  d="M184 112l144 144-144 144"
+                                ></path></svg></span
+                            >Meat</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="popular-area">
+          <div class="popular-header">
+            <div class="popular-header-content">
+              <h2>Popular Products for Daily Shopping</h2>
+              <p>
+                See all our popular products in this week. You can choose your
+                daily needs products from this list and get some special offer
+                with free shipping.
+              </p>
+            </div>
+          </div>
+          <div class="popular-container">
+            <div class="popular-content">
+              <div class="popular">
+                <div class="popular-single">
+                  <div class="popular-single-top">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0;
+                          margin: 0;
+                          padding: 0;
+                          max-width: 100%;
+                        "
+                        ><img
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0;
+                            margin: 0;
+                            padding: 0;
+                          "
+                          alt=""
+                          aria-hidden="true"
+                          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%27160%27/%3e" /></span
+                      ><img
+                        alt="Rainbow Chard"
+                        src="img/product/Rainbow-Chard-Package-per-lb.webp"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                          box-sizing: border-box;
+                          padding: 0;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0;
+                          height: 0;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                        "
+                    /></span>
+                  </div>
+                  <div class="popular-single-bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promotion-area"></div>
+
+        <div class="discount-area"></div>
+
+        <!--<div class="app-area"></div>-->
+      </div>
+    </section>
+  </body>
+</html>
